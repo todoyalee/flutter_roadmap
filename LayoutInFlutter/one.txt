@@ -1,3 +1,44 @@
 widgets are classes used to build UIs
 
 widgets are used for both layouts  and Ui elements
+
+
+compose simple widgets to build complex widgets
+
+
+In Flutter, a layout refers to how widgets are arranged and displayed on the screen. The term encompasses the process of organizing and 
+positioning various UI elements (widgets) to create a cohesive and functional user interface.
+The core of Flutter's layout mechanism is widgets. In Flutter, almost everything is a widget—even layout models are widgets. The images, icons, and text that you see in a Flutter app are all widgets. But things you don't see are also widgets, such as the rows, columns, and grids that arrange, constrain, and align the visible widgets.
+
+You create a layout by composing widgets to build more complex widgets. For example, the first screenshot below shows 3 icons with a label under each one:
+
+/*
+In Flutter, layout models refer to the various approaches and principles used to arrange and size widgets within a user interface. They are essentially the strategies and rules that dictate how widgets are positioned and sized on the screen. Here are some common layout models in Flutter:
+
+1. Single Child Layout Models
+These models deal with widgets that have a single child. Some examples include:
+
+Container: A versatile widget that can contain a single child and apply padding, margin, alignment, and constraints.
+Center: Centers its single child within itself.
+Align: Aligns its single child within itself based on alignment properties.
+Padding: Adds padding around its single child.
+2. Multi-Child Layout Models
+These models deal with widgets that have multiple children. Some examples include:
+
+Row: Arranges its children horizontally.
+Column: Arranges its children vertically.
+Stack: Overlaps its children, allowing for complex positioning.
+ListView: Displays its children in a scrollable list, either vertically or horizontally.
+GridView: Displays its children in a scrollable, 2D array of widgets.
+3. Flexible Layout Models
+These models allow for dynamic sizing and positioning of widgets based on available space and flex properties:
+
+Expanded: A widget that expands a child of a Row, Column, or Flex to fill the available space along the main axis.
+Flexible: A widget that controls how a child of a Row, Column, or Flex flexes.
+Spacer: A widget that takes up space proportional to its flex value within a Row, Column, or Flex.
+4. Custom Layout Models
+Flutter allows you to create custom layouts by extending certain classes and implementing their methods to control the layout behavior:
+
+CustomSingleChildLayout: A widget that defers the layout of its single child to a delegate.
+CustomMultiChildLayout: A widget that uses a delegate to position and size multiple children.
+*/
