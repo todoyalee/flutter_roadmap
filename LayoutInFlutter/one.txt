@@ -1,0 +1,3 @@
+widgets are classes used to build UIs
+
+widgets are used for both layouts  and Ui elements
